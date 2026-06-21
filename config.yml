@@ -1,0 +1,152 @@
+# ============================================================================
+# Decap CMS configuration for nicholasyou.com
+# Docs: https://decapcms.org/docs/
+#
+# This wires the admin panel (/admin) to the content/*.json files the site
+# reads. Editing an entry here commits the change straight to your Git repo.
+#
+# BEFORE THIS WORKS you must (one time):
+#   1. Put this project in a GitHub repo.
+#   2. Deploy it to Netlify (free).
+#   3. In Netlify: enable Identity, set registration to "Invite only",
+#      and enable Git Gateway.  (See SETUP-CMS.md for step-by-step.)
+#   4. Invite yourself as a user, accept the email, set a password.
+# Then visit  your-site.com/admin/  and log in.
+# ============================================================================
+
+backend:
+  name: git-gateway
+  branch: main          # change if your default branch isn't "main"
+
+# Where image/file uploads are stored and how the site references them.
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+# Friendlier editor: show a live note and keep entries tidy.
+site_url: https://nicholasyou.com
+display_url: https://nicholasyou.com
+
+collections:
+  # ---------------------------------------------------------------- ARTICLES
+  - name: articles
+    label: "Articles"
+    label_singular: "Article"
+    description: "Essays & field notes. Toggle 'Featured' to surface a post on the homepage (up to 6 show)."
+    files:
+      - name: articles
+        label: "All Articles"
+        file: "content/articles.json"
+        format: json
+        fields:
+          - name: items
+            label: "Articles"
+            label_singular: "Article"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Title", widget: string }
+              - { name: id, label: "URL slug", widget: string, hint: "Lowercase, dashes only — e.g. governing-the-machine. This is the page's permanent link; don't change it after publishing." }
+              - name: category
+                label: "Category"
+                widget: select
+                options: ["Data Privacy", "AI Governance", "Records Management", "Leadership"]
+              - { name: date, label: "Date label", widget: string, hint: "Shown as-is, e.g. 12 · Jun 2026" }
+              - { name: readTime, label: "Read time", widget: string, default: "5 min" }
+              - { name: featured, label: "Featured on homepage", widget: boolean, default: false }
+              - { name: dek, label: "Summary (dek)", widget: text }
+              - { name: pullQuote, label: "Pull quote", widget: text, required: false }
+              - name: sections
+                label: "Body sections"
+                label_singular: "Section"
+                widget: list
+                summary: "{{fields.heading}}"
+                fields:
+                  - { name: heading, label: "Heading", widget: string }
+                  - { name: text, label: "Paragraph", widget: text }
+
+  # ------------------------------------------------------------------ MAXIMS
+  - name: maxims
+    label: "Maxims"
+    description: "Short one-line maxims shown on the Thoughts & Foundations page."
+    files:
+      - name: maxims
+        label: "All Maxims"
+        file: "content/maxims.json"
+        format: json
+        fields:
+          - name: items
+            label: "Maxims"
+            label_singular: "Maxim"
+            widget: list
+            summary: "{{fields.text}}"
+            fields:
+              - { name: text, label: "Maxim", widget: text }
+
+  # -------------------------------------------------------- LEADERSHIP NOTES
+  - name: notes
+    label: "Leadership Notes"
+    label_singular: "Leadership Note"
+    description: "Short notes that each open their own page."
+    files:
+      - name: notes
+        label: "All Leadership Notes"
+        file: "content/notes.json"
+        format: json
+        fields:
+          - name: items
+            label: "Notes"
+            label_singular: "Note"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Title", widget: string }
+              - { name: id, label: "URL slug", widget: string, hint: "Lowercase, dashes only — e.g. lead-the-conversation." }
+              - { name: summary, label: "Summary line", widget: text }
+              - { name: body, label: "Body", widget: text, hint: "Separate paragraphs with a blank line." }
+
+  # -------------------------------------------------------------- FRAMEWORKS
+  - name: frameworks
+    label: "Frameworks"
+    label_singular: "Framework"
+    description: "Infographic frameworks. Use 'Rows' layout for a numbered list, or 'Stats' for a big-number grid — fill the matching list below."
+    files:
+      - name: frameworks
+        label: "All Frameworks"
+        file: "content/frameworks.json"
+        format: json
+        fields:
+          - name: items
+            label: "Frameworks"
+            label_singular: "Framework"
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { name: label, label: "Title", widget: string }
+              - { name: id, label: "URL slug", widget: string, hint: "Lowercase, dashes only — e.g. the-governance-stack." }
+              - { name: summary, label: "Summary line", widget: text }
+              - name: layout
+                label: "Layout"
+                widget: select
+                options: ["rows", "stats"]
+                default: "rows"
+                hint: "rows = numbered list · stats = big-number grid"
+              - { name: body, label: "Intro", widget: text, hint: "Separate paragraphs with a blank line." }
+              - name: rows
+                label: "Rows (for 'rows' layout)"
+                label_singular: "Row"
+                widget: list
+                required: false
+                summary: "{{fields.n}} — {{fields.h}}"
+                fields:
+                  - { name: n, label: "Number", widget: string, hint: "e.g. 01" }
+                  - { name: h, label: "Heading", widget: string }
+                  - { name: t, label: "Detail", widget: text, required: false }
+              - name: stats
+                label: "Stats (for 'stats' layout)"
+                label_singular: "Stat"
+                widget: list
+                required: false
+                summary: "{{fields.v}} — {{fields.l}}"
+                fields:
+                  - { name: v, label: "Value", widget: string, hint: "e.g. 72h" }
+                  - { name: l, label: "Label", widget: string }
