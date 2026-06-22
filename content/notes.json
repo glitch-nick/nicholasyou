@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "lead-the-conversation",
+      "title": "Lead the conversation",
+      "summary": "Set your governance posture before the regulator sets it for you.",
+      "body": "Waiting for regulation to define what good looks like cedes both the initiative and the narrative. The organizations that set their own posture early shape how they are judged later — by regulators, by customers, and by their own people.\n\nLeading the conversation means publishing your principles, making your trade-offs legible, and being the first to name the hard questions in your space. It is cheaper to lead than to react."
+    },
+    {
+      "id": "make-the-right-path-easy",
+      "title": "Make the right path easy",
+      "summary": "People follow the path of least resistance. Engineer it toward responsibility.",
+      "body": "Policy that depends on heroic compliance fails quietly. People are busy, and they default to whatever is easiest in the moment — not whatever the memo asked for.\n\nMost of the work of governance is the work of making the responsible choice the convenient one: defaults, templates, and tooling that route people toward the right outcome without a second thought."
+    },
+    {
+      "id": "assign-accountability-first",
+      "title": "Assign accountability first",
+      "summary": "Decide who is answerable before you decide what to build.",
+      "body": "A control with no owner is a control in name only. The first question on any new system is not how it works — it is who answers for it when it does not.\n\nName the accountable person before the project starts, and the rest of the governance tends to follow. Leave it for later, and it never gets assigned at all."
+    }
+  ]
+}

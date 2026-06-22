@@ -1,0 +1,140 @@
+{
+  "items": [
+    {
+      "id": "eight-lessons",
+      "label": "Eight Lessons for Building a Team",
+      "layout": "rows",
+      "summary": "Eight operating principles for a high-performing, engaged team — from meeting discipline to mission.",
+      "body": "High-performing teams aren't an accident of talent; they're the product of a few principles applied relentlessly. These eight are the ones I keep returning to — equally at home running a governance program or a product team.",
+      "rows": [
+        {
+          "n": "01",
+          "h": "No Agenda, No Meeting",
+          "t": "Time is your most valuable resource. If a meeting can't name what it's deciding, it shouldn't happen."
+        },
+        {
+          "n": "02",
+          "h": "New Initiative, Make a Plan",
+          "t": "Before every project, scope the one core focus, the strategy to reach it, and the immediate next step."
+        },
+        {
+          "n": "03",
+          "h": "Be Vulnerable, Be Real",
+          "t": "Be human with your team. Admit when you're wrong, never play the victim, and take extreme ownership."
+        },
+        {
+          "n": "04",
+          "h": "Protect Deep Work",
+          "t": "Guard a daily block for the hard things. Quality and speed compound when attention isn't fragmented."
+        },
+        {
+          "n": "05",
+          "h": "Sweat the Small Stuff",
+          "t": "How you do anything is how you do everything. Details, design, and copy all matter."
+        },
+        {
+          "n": "06",
+          "h": "Be the Hardest Worker",
+          "t": "Set the work ethic you expect — then hire people smarter than you and lead by example."
+        },
+        {
+          "n": "07",
+          "h": "Flatten the Hierarchy",
+          "t": "Build psychological safety. Value ideas from everyone and make discussion the default."
+        },
+        {
+          "n": "08",
+          "h": "Connect to a Mission",
+          "t": "Give people work they care about. Belonging and purpose outlast any incentive."
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "the-governance-stack",
+      "label": "The Governance Stack",
+      "layout": "rows",
+      "summary": "The three layers of accountability every information program rests on — and how they fit together.",
+      "body": "Most organizations treat privacy, records, and AI as separate problems owned by separate people. They're not. They're three layers of one stack, and a gap in any layer undermines the others.\n\nRead from the bottom up: you can't govern decisions you can't explain, and you can't explain them without knowing what data you hold and why.",
+      "rows": [
+        {
+          "n": "01",
+          "h": "Data Privacy",
+          "t": "How personal information is collected, used, and protected."
+        },
+        {
+          "n": "02",
+          "h": "Records Management",
+          "t": "What you keep, for how long, and when you defensibly let go."
+        },
+        {
+          "n": "03",
+          "h": "AI Governance",
+          "t": "How automated decisions are overseen, explained, and owned."
+        }
+      ],
+      "stats": []
+    },
+    {
+      "id": "by-the-numbers",
+      "label": "By the Numbers",
+      "layout": "stats",
+      "summary": "The few figures that frame how I think about governance risk.",
+      "body": "Numbers concentrate the mind. These four are the ones I find myself returning to in board conversations.",
+      "rows": [],
+      "stats": [
+        {
+          "v": "03",
+          "l": "Layers of accountability"
+        },
+        {
+          "v": "72h",
+          "l": "Breach notification window"
+        },
+        {
+          "v": "05",
+          "l": "Questions every board must ask"
+        },
+        {
+          "v": "01",
+          "l": "Moat that matters — trust"
+        }
+      ]
+    },
+    {
+      "id": "five-questions",
+      "label": "Five Questions Every Board Must Ask About AI",
+      "layout": "rows",
+      "summary": "Five questions that separate boards that govern AI from boards that merely approve it.",
+      "body": "You don't need to be technical to govern AI well. You need to ask the right questions and refuse to move on until they're answered. These five are where every board should start.",
+      "rows": [
+        {
+          "n": "01",
+          "h": "Who is accountable when the model is wrong?",
+          "t": ""
+        },
+        {
+          "n": "02",
+          "h": "What data trained it, and may we lawfully use it?",
+          "t": ""
+        },
+        {
+          "n": "03",
+          "h": "Can we explain a decision to the person it affects?",
+          "t": ""
+        },
+        {
+          "n": "04",
+          "h": "How will we detect drift, bias, and failure?",
+          "t": ""
+        },
+        {
+          "n": "05",
+          "h": "What is our plan to turn it off?",
+          "t": ""
+        }
+      ],
+      "stats": []
+    }
+  ]
+}
