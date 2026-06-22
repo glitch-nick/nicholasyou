@@ -1,0 +1,7 @@
+# Netlify configuration for nicholasyou.com
+# Static site — no build step. Netlify serves the files as-is and uses
+# index.html as the homepage at "/" automatically. No rewrite needed.
+
+[build]
+  publish = "."
+  command = ""

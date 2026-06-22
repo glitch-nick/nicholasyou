@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO ===== -->
+<title>Nicholas You — Privacy, AI Governance & Records Management</title>
+<meta name="description" content="Nicholas You helps boards, executives and general counsel turn privacy and AI risk into competitive advantage — AI governance, data privacy, and records management programs that hold up under scrutiny.">
+<meta name="author" content="Nicholas You">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nicholasyou.com/">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+
+<!-- ===== Open Graph (LinkedIn, Facebook, iMessage, Slack) ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nicholas You">
+<meta property="og:title" content="Nicholas You — Privacy, AI Governance & Records Management">
+<meta property="og:description" content="Helping boards, executives and general counsel turn privacy and AI risk into competitive advantage.">
+<meta property="og:url" content="https://nicholasyou.com/">
+<meta property="og:image" content="https://nicholasyou.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nicholas You — Data Privacy, AI Governance, Records Management">
+
+<!-- ===== Twitter / X ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nicholas You — Privacy, AI Governance & Records Management">
+<meta name="twitter:description" content="Helping boards, executives and general counsel turn privacy and AI risk into competitive advantage.">
+<meta name="twitter:image" content="https://nicholasyou.com/assets/og-image.png">
+
+<!-- ===== Favicons ===== -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- ===== Structured data (Google rich results / knowledge panel) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nicholas You",
+  "url": "https://nicholasyou.com/",
+  "image": "https://nicholasyou.com/assets/og-image.png",
+  "jobTitle": "Privacy, AI Governance & Records Management Advisor",
+  "email": "mailto:nicholasjyou@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/nicholasyou"],
+  "knowsAbout": ["Data Privacy", "AI Governance", "Records Management", "Information Governance", "Regulatory Compliance", "EU AI Act", "NIST AI RMF", "ISO 42001", "GDPR", "CCPA"],
+  "description": "Helping boards, executives and general counsel turn privacy and AI risk into competitive advantage."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nicholas You",
+  "url": "https://nicholasyou.com/"
+}
+</script>
+
+<!-- ===== Google Analytics (GA4) =====
+     1. Create a GA4 property at analytics.google.com and copy your Measurement ID
+        (looks like G-ABC1234XYZ).
+     2. Replace G-XXXXXXXXXX below with it. Until you do, analytics stays off. -->
+<script>
+  window.GA_MEASUREMENT_ID = "G-NG6XCJPX4G";
+  (function () {
+    var id = window.GA_MEASUREMENT_ID;
+    if (!id || id.indexOf("G-XXXX") === 0) return; // not configured yet — skip
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", id);
+  })();
+</script>
+
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:#000;color:#fff;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  /* Visible keyboard-focus ring (only shows for keyboard users, not mouse clicks). */
+  :focus-visible{outline:2px solid #c3d9f3;outline-offset:3px;border-radius:2px;}
+  ::selection{background:#c3d9f3;color:#000;}
+  @keyframes ny-reveal{from{transform:translateY(16px);}to{transform:none;}}
+  /* Responsive: base layout is desktop (inline styles); these override on small screens.
+     Display fonts use clamp() inline, so they scale without media queries. */
+  @media (max-width: 860px){
+    .ny-px{padding-left:22px !important;padding-right:22px !important;}
+    .ny-pt{padding-top:80px !important;}
+    .ny-col{grid-template-columns:1fr !important;}
+    .ny-numbers{grid-template-columns:1fr 1fr !important;row-gap:40px;}
+    .ny-stack{flex-direction:column !important;align-items:flex-start !important;gap:10px !important;}
+    .ny-stack>*{width:auto !important;flex:none !important;}
+    .ny-tight{gap:18px !important;}
+    .ny-gap{gap:40px !important;}
+    .ny-nav{padding-left:16px !important;padding-right:16px !important;}
+    .ny-navgroup{gap:14px !important;}
+    .ny-navlink{font-size:11px !important;letter-spacing:1px !important;}
+    .ny-navlogo{height:36px !important;}
+    .ny-footbot{flex-direction:column !important;gap:14px !important;align-items:flex-start !important;}
+  }
+  @media (max-width: 420px){
+    .ny-navgroup{gap:10px !important;}
+    .ny-navlink{letter-spacing:0.5px !important;}
+    .ny-px{padding-left:18px !important;padding-right:18px !important;}
+  }
+  /* Respect users who ask for less motion. */
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;}
+  }
+</style>
+<!-- Netlify Identity widget. When an invite / password-reset email lands here with
+     a token in the URL hash, the widget auto-opens its "Complete your signup /
+     set password" modal. After you log in it sends you to /admin/. This is Decap's
+     documented setup — the modal lives on the homepage, not /admin/. -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  (function () {
+    function start() {
+      if (!window.netlifyIdentity) { setTimeout(start, 100); return; }
+      netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          netlifyIdentity.on("login", function () { document.location.href = "/admin/"; });
+        }
+      });
+      netlifyIdentity.init();
+    }
+    start();
+  })();
+</script>
+</helmet>
+
+<div style="background:#000;min-height:100vh;font-family:'Cormorant Garamond',serif;">
+
+  <!-- ============ TOP NAV ============ -->
+  <div style="position:sticky;top:0;z-index:50;position:-webkit-sticky;">
+  <div class="ny-nav" style="position:relative;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(0,0,0,0.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #262626;">
+    <div class="ny-navgroup" style="display:flex;gap:28px;align-items:center;">
+      <a class="ny-navlink" href="#/writing" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;text-decoration:none;" style-hover="opacity:0.55">Writing</a>
+      <a class="ny-navlink" href="#/quotes" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;text-decoration:none;" style-hover="opacity:0.55">Maxims</a>
+    </div>
+    <img class="ny-navlogo" onClick="{{ goHome }}" src="assets/ny-logo-signature.png" alt="N. You" style="cursor:pointer;height:40px;width:auto;display:block;mix-blend-mode:screen;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);">
+    <div class="ny-navgroup" style="display:flex;gap:28px;align-items:center;">
+      <a class="ny-navlink" href="#/about" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;text-decoration:none;" style-hover="opacity:0.55">About</a>
+      <a class="ny-navlink" href="/cdn-cgi/l/email-protection#47292e242f282b26342d3e283207202a262e2b6924282a" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;text-decoration:none;" style-hover="opacity:0.55">Contact</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Content load error (only if content/*.json can't be fetched) -->
+  <sc-if value="{{ loadError }}" hint-placeholder-val="{{ false }}">
+  <div style="background:#2a1a1a;border-bottom:1px solid #5a2a2a;padding:14px 24px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;color:#e8b4b4;">Content couldn't load. If you're viewing this offline, run it through a local server — the live site loads content/*.json over the web.</div>
+  </sc-if>
+
+  <!-- ============ HOME ============ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div>
+    <div class="ny-px ny-pt" style="max-width:1180px;margin:0 auto;padding:104px 64px 64px;display:flex;justify-content:space-between;align-items:flex-end;gap:48px;border-bottom:1px solid #262626;">
+      <div data-reveal style="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:28px;">Data Privacy · AI Governance · Records Management</div>
+        <h1 style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:clamp(44px,11vw,72px);line-height:1.0;letter-spacing:3px;text-transform:uppercase;color:#fff;">Nicholas You</h1>
+        <div style="max-width:640px;margin-top:28px;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.6vw,24px);line-height:1.45;color:#ccc;">Helping boards, executives and general counsel turn privacy and AI risk into competitive advantage.</div>
+      </div>
+    </div>
+
+    <div class="ny-px" style="max-width:1180px;margin:0 auto;padding:56px 64px 40px;">
+      <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:28px;">Featured Posts</div>
+      <div class="ny-col" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#262626;border:1px solid #262626;">
+        <sc-for list="{{ featured }}" as="post" hint-placeholder-count="6">
+          <div onClick="{{ post.open }}" onKeyDown="{{ post.key }}" tabindex="0" role="link" data-reveal style="cursor:pointer;background:#000;padding:36px;" style-hover="background:#0d0d0d">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;display:flex;justify-content:space-between;margin-bottom:18px;"><span>{{ post.category }}</span><span>{{ post.date }}</span></div>
+            <div style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:28px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.08;">{{ post.title }}</div>
+            <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:#ccc;">{{ post.dek }}</div>
+            <div style="margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;">Read →</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:center;padding:48px 0 8px;">
+        <span onClick="{{ goWriting }}" style="cursor:pointer;display:inline-flex;align-items:center;height:44px;padding:0 32px;border:1px solid #fff;border-radius:9999px;font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:#fff;" style-hover="background:#fff;color:#000">All Writing</span>
+      </div>
+    </div>
+
+    <div data-reveal class="ny-px" style="padding:104px 64px;border-top:1px solid #262626;text-align:center;">
+      <div style="max-width:860px;margin:0 auto;font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4.6vw,40px);line-height:1.32;color:#e6e6e6;">“The organizations that win the next decade won't hold the most data — they'll be the ones most trusted to hold it.”</div>
+      <div style="margin-top:32px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;">Nicholas You</div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ WRITING INDEX ============ -->
+  <sc-if value="{{ isWriting }}" hint-placeholder-val="{{ false }}">
+  <div class="ny-px ny-pt" style="max-width:1180px;margin:0 auto;padding:104px 64px 80px;">
+    <div data-reveal style="border-bottom:1px solid #262626;padding-bottom:48px;margin-bottom:48px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:24px;">Writing</div>
+      <h1 style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:clamp(38px,9vw,64px);line-height:1.0;letter-spacing:3px;text-transform:uppercase;color:#fff;">Essays &amp; Field Notes</h1>
+      <div style="max-width:640px;margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.4vw,22px);line-height:1.45;color:#ccc;">On data privacy, AI governance, and records management — written for the people who carry the risk.</div>
+    </div>
+    <div data-reveal style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;">
+      <sc-for list="{{ topicChips }}" as="chip" hint-placeholder-count="4">
+        <span onClick="{{ chip.on }}" style="cursor:pointer;display:inline-flex;align-items:center;height:34px;padding:0 18px;border:1px solid {{ chip.border }};border-radius:9999px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:{{ chip.color }};" style-hover="border-color:#fff;color:#fff">{{ chip.label }}</span>
+      </sc-for>
+    </div>
+    <div class="ny-col" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#262626;border:1px solid #262626;">
+      <sc-for list="{{ writingArticles }}" as="post" hint-placeholder-count="6">
+        <div onClick="{{ post.open }}" onKeyDown="{{ post.key }}" tabindex="0" role="link" data-reveal style="cursor:pointer;background:#000;padding:36px;" style-hover="background:#0d0d0d">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;display:flex;justify-content:space-between;margin-bottom:18px;"><span>{{ post.category }}</span><span>{{ post.date }}</span></div>
+          <div style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:28px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.08;">{{ post.title }}</div>
+          <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:#ccc;">{{ post.dek }}</div>
+          <div style="margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;">Read · {{ post.readTime }} →</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ SINGLE ARTICLE ============ -->
+  <sc-if value="{{ isArticle }}" hint-placeholder-val="{{ false }}">
+  <div class="ny-px" style="max-width:760px;margin:0 auto;padding:80px 32px 96px;">
+    <span onClick="{{ goWriting }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;" style-hover="color:#fff">← All Writing</span>
+    <div class="ny-tight" style="margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;display:flex;flex-wrap:wrap;gap:20px;">
+      <span>{{ current.category }}</span><span>{{ current.date }}</span><span>{{ current.readTime }}</span>
+    </div>
+    <h1 style="margin-top:28px;font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:clamp(32px,8vw,52px);line-height:1.08;letter-spacing:2px;text-transform:uppercase;color:#fff;">{{ current.title }}</h1>
+    <div style="margin-top:28px;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.8vw,24px);line-height:1.5;color:#e6e6e6;">{{ current.dek }}</div>
+    <div style="margin-top:48px;padding:40px 0;border-top:1px solid #262626;border-bottom:1px solid #262626;text-align:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(23px,4vw,30px);line-height:1.4;color:#fff;">“{{ current.pullQuote }}”</div>
+    </div>
+    <div style="margin-top:48px;">
+      <sc-for list="{{ current.sections }}" as="sec" hint-placeholder-count="4">
+        <div data-reveal style="margin-bottom:40px;">
+          <h2 style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:24px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:16px;">{{ sec.heading }}</h2>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#ccc;">{{ sec.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top:24px;padding-top:40px;border-top:1px solid #262626;display:flex;justify-content:space-between;align-items:center;">
+      <span onClick="{{ goWriting }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;" style-hover="color:#fff">← All Writing</span>
+      <a href="/cdn-cgi/l/email-protection#9ff1f6fcf7f0f3feecf5e6f0eadff8f2fef6f3b1fcf0f2" style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;text-decoration:none;">Get in touch →</a>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ ABOUT ============ -->
+  <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <div class="ny-px ny-pt" style="max-width:1180px;margin:0 auto;padding:104px 64px 80px;">
+    <div data-reveal style="">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:24px;">About</div>
+      <div style="max-width:960px;font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4.6vw,40px);line-height:1.3;color:#fff;">When AI fails at the board level, it's rarely a technology problem. It's a governance failure — and governance is the part I build.</div>
+    </div>
+    <div class="ny-col ny-gap" style="display:grid;grid-template-columns:1.5fr 1fr;gap:64px;margin-top:80px;padding-top:64px;border-top:1px solid #262626;">
+      <div data-reveal style="">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#ccc;margin-bottom:24px;">Regulatory investigations, class actions, reputational damage — these have become the common outcome when AI adoption outpaces accountability. I work with executives, boards, and General Counsel to make sure it doesn't.</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#ccc;margin-bottom:24px;">My focus is AI governance, data privacy, information governance, and regulatory compliance. I help organizations build programs that hold up under scrutiny and still move the business forward — translating requirements like the EU AI Act, NIST AI RMF, ISO 42001, GDPR, and CCPA into operating models teams can actually execute. Not theory. Working programs.</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#ccc;margin-bottom:24px;">My role doesn't end at a policy draft or a set of governance artifacts. I stay through implementation. Whether you're building from scratch or fixing what isn't working, the goal is the same: put real structure in place and make it stick.</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#e6e6e6;">The result is simple. Organizations leave with control over their data, clear ownership of their AI and privacy risks, and the ability to move faster — because the guardrails and the processes are finally built.</p>
+      </div>
+      <div data-reveal style="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:8px;">Engagements</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">AI governance frameworks &amp; policies</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">Governance build-outs &amp; strategy realization</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">AI &amp; privacy risk assessments</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">Copilot, Cowork &amp; Claude prompt engineering</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">Privacy program design &amp; assessments</div>
+        <div style="border-top:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">Records management implementation</div>
+        <div style="border-top:1px solid #262626;border-bottom:1px solid #262626;padding:14px 0;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.4;color:#ccc;">Legal process optimization</div>
+      </div>
+    </div>
+
+    <!-- Credentials & Certifications -->
+    <div data-reveal style="margin-top:96px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:8px;">Credentials &amp; Certifications</div>
+      <sc-for list="{{ credGroups }}" as="g" hint-placeholder-count="6">
+        <div style="margin-top:44px;">
+          <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:18px;">
+            <span style="flex:none;font-family:'Saira Condensed',sans-serif;font-size:24px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1;">{{ g.label }}</span>
+            <span style="flex:1;height:1px;background:#262626;"></span>
+          </div>
+          <div class="ny-col" style="display:grid;grid-template-columns:1fr 1fr;column-gap:48px;">
+            <sc-for list="{{ g.items }}" as="c" hint-placeholder-count="4">
+              <div style="border-top:1px solid #262626;padding:18px 4px;display:flex;gap:18px;align-items:baseline;">
+                <span style="flex:none;min-width:88px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.5px;color:#c3d9f3;">{{ c.abbr }}</span>
+                <div style="flex:1;">
+                  <div style="font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.3;color:#fff;">{{ c.name }}</div>
+                  <div style="margin-top:4px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#777;">{{ c.sub }}</div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <!-- Areas of Expertise -->
+    <div data-reveal style="margin-top:96px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:28px;">Areas of Expertise</div>
+      <div class="ny-col" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#262626;border:1px solid #262626;">
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">AI Governance &amp; Strategy</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">EU AI Act · NIST AI RMF · FS AI RMF · ISO 42001</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Data Privacy &amp; Protection</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">GDPR · CCPA/CPRA · NIST PF · ISO 27701 · COPPA · CIPA · PIPEDA · GAPP</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Information Governance &amp; Records Management</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">GARP · ISO 15489</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Regulatory Compliance</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">Multi-jurisdiction readiness</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Legal Process Optimization</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">ACC</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Contracts Lifecycle Management</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">Policy to execution</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">Consumer Protection</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">TCPA · CAN-SPAM</div>
+        </div>
+        <div style="background:#000;padding:28px;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:22px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">User Experience</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;line-height:1.7;color:#999;">Governance people will actually use</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Closing CTA -->
+    <div data-reveal style="margin-top:96px;padding-top:64px;border-top:1px solid #262626;text-align:center;">
+      <div style="max-width:760px;margin:0 auto;font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4vw,32px);line-height:1.4;color:#fff;">If you're a board member, executive, or General Counsel facing AI risk or privacy exposure, we should talk.</div>
+      <a href="/cdn-cgi/l/email-protection#9df3f4fef5f2f1fceef7e4f2e8ddfaf0fcf4f1b3fef2f0" style="margin-top:36px;display:inline-flex;align-items:center;height:44px;padding:0 32px;border:1px solid #fff;border-radius:9999px;font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:#fff;text-decoration:none;" style-hover="background:#fff;color:#000">Start a conversation</a>
+      <div style="margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c12151f1413101d0f160513093c1b111d1510521f1311">[email&#160;protected]</a></div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ QUOTES & INFOGRAPHICS ============ -->
+  <sc-if value="{{ isQuotes }}" hint-placeholder-val="{{ false }}">
+  <div class="ny-px ny-pt" style="max-width:1180px;margin:0 auto;padding:104px 64px 80px;">
+    <div data-reveal style="border-bottom:1px solid #262626;padding-bottom:48px;margin-bottom:8px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:24px;">Maxims · Leadership Notes · Frameworks</div>
+      <h1 style="font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:clamp(38px,9vw,64px);line-height:1.0;letter-spacing:3px;text-transform:uppercase;color:#fff;">Thoughts &amp; Foundations</h1>
+      <div style="max-width:640px;margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.4vw,22px);line-height:1.45;color:#ccc;">Maxims worth pinning above a desk, and a few frameworks worth keeping in a boardroom.</div>
+    </div>
+
+    <!-- Field notes / quotes -->
+    <div style="padding:32px 0;">
+      <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="5">
+        <div data-reveal class="ny-tight" style="display:flex;gap:40px;align-items:baseline;padding:40px 0;border-bottom:1px solid #262626;">
+          <span style="flex:none;width:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#666;">{{ q.num }}</span>
+          <span style="flex:1;font-family:'Cormorant Garamond',serif;font-size:clamp(24px,4.2vw,34px);line-height:1.32;color:#fff;">“{{ q.text }}”</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <!-- Leadership notes (clickable → detail page) -->
+    <div data-reveal style="padding:72px 0 0;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:32px;">Leadership Notes</div>
+      <div class="ny-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#262626;border:1px solid #262626;">
+        <sc-for list="{{ notes }}" as="ln" hint-placeholder-count="3">
+          <div onClick="{{ ln.open }}" onKeyDown="{{ ln.key }}" tabindex="0" role="link" style="cursor:pointer;background:#000;padding:36px;display:flex;flex-direction:column;min-height:210px;" style-hover="background:#0d0d0d">
+            <div style="font-family:'Saira Condensed',sans-serif;font-size:24px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">{{ ln.h }}</div>
+            <div style="margin-top:14px;flex:1;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:#999;">{{ ln.t }}</div>
+            <div style="margin-top:22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;">Read →</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- Frameworks index (clickable → detail page) -->
+    <div data-reveal style="padding:88px 0 0;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;margin-bottom:16px;">Frameworks</div>
+      <sc-for list="{{ frameworks }}" as="f" hint-placeholder-count="4">
+        <div onClick="{{ f.open }}" onKeyDown="{{ f.key }}" tabindex="0" role="link" class="ny-tight" style="cursor:pointer;display:flex;gap:32px;align-items:center;padding:32px 4px;border-top:1px solid #262626;" style-hover="background:#0d0d0d">
+          <span style="flex:none;width:54px;font-family:'Saira Condensed',sans-serif;font-size:40px;letter-spacing:1px;color:#3a3a3a;line-height:1;">{{ f.num }}</span>
+          <div style="flex:1;">
+            <div style="font-family:'Saira Condensed',sans-serif;font-size:28px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.08;">{{ f.label }}</div>
+            <div style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:#999;">{{ f.summary }}</div>
+          </div>
+          <span style="flex:none;font-family:'JetBrains Mono',monospace;font-size:14px;color:#c3d9f3;">→</span>
+        </div>
+      </sc-for>
+      <div style="border-top:1px solid #262626;"></div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ FRAMEWORK / NOTE DETAIL ============ -->
+  <sc-if value="{{ isPiece }}" hint-placeholder-val="{{ false }}">
+  <div class="ny-px" style="max-width:880px;margin:0 auto;padding:80px 32px 96px;">
+    <span onClick="{{ goQuotes }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;" style-hover="color:#fff">← Thoughts &amp; Foundations</span>
+    <div style="margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;">{{ piece.kindLabel }}</div>
+    <h1 style="margin-top:20px;font-family:'Saira Condensed',sans-serif;font-weight:400;font-size:clamp(32px,8vw,52px);line-height:1.06;letter-spacing:2px;text-transform:uppercase;color:#fff;">{{ piece.label }}</h1>
+    <div style="margin-top:24px;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.8vw,24px);line-height:1.5;color:#e6e6e6;">{{ piece.summary }}</div>
+
+    <div style="margin-top:44px;">
+      <sc-for list="{{ piece.body }}" as="para" hint-placeholder-count="2">
+        <p data-reveal style="font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.62;color:#ccc;margin-bottom:24px;">{{ para }}</p>
+      </sc-for>
+    </div>
+
+    <!-- rows layout -->
+    <sc-if value="{{ piece.showRows }}" hint-placeholder-val="{{ false }}">
+    <div style="margin-top:32px;">
+      <sc-for list="{{ piece.rows }}" as="row" hint-placeholder-count="5">
+        <div data-reveal style="display:flex;gap:28px;align-items:baseline;padding:30px 0;border-top:1px solid #262626;">
+          <span style="flex:none;width:54px;font-family:'Saira Condensed',sans-serif;font-size:40px;letter-spacing:1px;color:#3a3a3a;line-height:1;">{{ row.n }}</span>
+          <div style="flex:1;">
+            <div style="font-family:'Saira Condensed',sans-serif;font-size:26px;letter-spacing:1px;text-transform:uppercase;color:#fff;line-height:1.1;">{{ row.h }}</div>
+            <div style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.55;color:#999;">{{ row.t }}</div>
+          </div>
+        </div>
+      </sc-for>
+      <div style="border-top:1px solid #262626;"></div>
+    </div>
+    </sc-if>
+
+    <!-- stats layout -->
+    <sc-if value="{{ piece.showStats }}" hint-placeholder-val="{{ false }}">
+    <div class="ny-numbers" style="margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);row-gap:48px;">
+      <sc-for list="{{ piece.stats }}" as="st" hint-placeholder-count="4">
+        <div style="padding:0 32px;border-left:1px solid #262626;">
+          <div style="font-family:'Saira Condensed',sans-serif;font-size:clamp(48px,9vw,64px);letter-spacing:1px;color:#fff;line-height:1;">{{ st.v }}</div>
+          <div style="margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;">{{ st.l }}</div>
+        </div>
+      </sc-for>
+    </div>
+    </sc-if>
+
+    <div style="margin-top:48px;padding-top:40px;border-top:1px solid #262626;display:flex;justify-content:space-between;align-items:center;">
+      <span onClick="{{ goQuotes }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;" style-hover="color:#fff">← Thoughts &amp; Foundations</span>
+      <a href="/cdn-cgi/l/email-protection#345a5d575c5b5855475e4d5b41745359555d581a575b59" style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c3d9f3;text-decoration:none;">Get in touch →</a>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="ny-px" style="border-top:1px solid #262626;padding:72px 64px 56px;">
+    <div class="ny-col" style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;">
+      <div>
+        <img onClick="{{ goHome }}" src="assets/ny-logo.jpg" alt="Nicholas You" style="cursor:pointer;height:64px;width:auto;display:block;mix-blend-mode:screen;margin-left:-8px;">
+        <div style="margin-top:12px;max-width:340px;font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:#999;">I make it personal when it comes to your data.</div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:18px;">Site</div>
+        <div onClick="{{ goWriting }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">Writing</div>
+        <div onClick="{{ goQuotes }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">Maxims</div>
+        <div onClick="{{ goAbout }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">About</div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:18px;">Topics</div>
+        <div onClick="{{ goTopicPrivacy }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">Data Privacy</div>
+        <div onClick="{{ goTopicAI }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">AI Governance</div>
+        <div onClick="{{ goTopicRecords }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;" style-hover="color:#fff">Records Management</div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;margin-bottom:18px;">Connect</div>
+        <a href="/cdn-cgi/l/email-protection#afc1c6ccc7c0c3cedcc5d6c0daefc8c2cec6c381ccc0c2" style="display:block;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;text-decoration:none;" style-hover="color:#fff">Email</a>
+        <a href="https://www.linkedin.com/in/nicholasyou" target="_blank" rel="noopener" style="display:block;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#999;padding:6px 0;text-decoration:none;" style-hover="color:#fff">LinkedIn</a>
+      </div>
+    </div>
+    <div class="ny-footbot" style="max-width:1180px;margin:48px auto 0;padding-top:28px;border-top:1px solid #262626;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:#666;">© {{ year }} Nicholas You. All rights reserved.</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#666;">Privacy · AI · Records</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  /* CREDENTIALS — grouped by category. abbr = badge, name = title, sub = issuer. */
+  CRED_GROUPS = [
+    { label: "Bar Admission", items: [
+      { abbr: "ESQ", name: "State Bar of California", sub: "Attorney · No. 282786" }
+    ]},
+    { label: "Privacy & AI Governance", items: [
+      { abbr: "AIGP", name: "AI Governance Professional", sub: "IAPP" },
+      { abbr: "FIP", name: "Fellow of Information Privacy", sub: "IAPP" },
+      { abbr: "CIPP/US", name: "Information Privacy Professional — US", sub: "IAPP" },
+      { abbr: "CIPP/E", name: "Information Privacy Professional — Europe", sub: "IAPP" },
+      { abbr: "CIPM", name: "Information Privacy Manager", sub: "IAPP" },
+      { abbr: "CIPT", name: "Information Privacy Technologist", sub: "IAPP" },
+      { abbr: "FPT", name: "Fellow of Privacy Technology", sub: "OneTrust" }
+    ]},
+    { label: "Standards & Auditing", items: [
+      { abbr: "ISO 42001", name: "Foundation", sub: "PECB" },
+      { abbr: "ISO 42001", name: "Lead Auditor", sub: "Mastermind" },
+      { abbr: "ISO 27001", name: "Lead Auditor", sub: "Mastermind" },
+      { abbr: "ISO 27701", name: "Lead Auditor", sub: "Mastermind" },
+      { abbr: "FMSA", name: "Fellow of Management Systems Auditing", sub: "Mastermind" }
+    ]},
+    { label: "Microsoft", items: [
+      { abbr: "AZ-900", name: "Azure Fundamentals", sub: "Microsoft" },
+      { abbr: "SC-900", name: "Security & Compliance Fundamentals", sub: "Microsoft" },
+      { abbr: "PL-900", name: "Power Platform Fundamentals", sub: "Microsoft" },
+      { abbr: "AB-730", name: "AI Business Professional", sub: "Microsoft" },
+      { abbr: "AB-900", name: "Copilot & Agent Administration Fundamentals", sub: "Microsoft" }
+    ]},
+    { label: "Agile Delivery", items: [
+      { abbr: "CSM", name: "Certified ScrumMaster", sub: "Scrum Alliance" },
+      { abbr: "CSPO", name: "Certified Scrum Product Owner", sub: "Scrum Alliance" }
+    ]},
+    { label: "Human-Centered Design", items: [
+      { abbr: "HCD", name: "Certified Practitioner", sub: "Luma Institute" },
+      { abbr: "HCD", name: "Certified Facilitator", sub: "Luma Institute" }
+    ]}
+  ];
+
+  constructor(props) {
+    super(props);
+    this.state = { route: this.parse(), content: null, loadError: false };
+  }
+
+  parse() {
+    const h = (typeof location !== "undefined" ? location.hash : "").replace(/^#\/?/, "");
+    if (!h) return { name: "home" };
+    const p = h.split("/");
+    if (p[0] === "article" && p[1]) return { name: "article", id: p[1] };
+    if (p[0] === "framework" && p[1]) return { name: "framework", id: p[1] };
+    if (p[0] === "note" && p[1]) return { name: "note", id: p[1] };
+    if (p[0] === "writing") return { name: "writing", topic: p[1] || null };
+    if (["about", "quotes"].includes(p[0])) return { name: p[0] };
+    return { name: "home" };
+  }
+
+  componentDidMount() {
+    this._onHash = () => { this.setState({ route: this.parse() }); window.scrollTo(0, 0); this.updateTitle(true); };
+    window.addEventListener("hashchange", this._onHash);
+    this.loadContent();
+    this.updateTitle(false);
+  }
+
+  /* Per-section browser-tab title (also feeds Google Analytics SPA page views). */
+  sectionTitle() {
+    const r = this.state.route; const base = "Nicholas You";
+    const c = this.state.content;
+    const find = (arr, id) => (arr || []).find((x) => x.id === id);
+    if (r.name === "writing") return "Writing · " + base;
+    if (r.name === "about") return "About · " + base;
+    if (r.name === "quotes") return "Thoughts & Foundations · " + base;
+    if (r.name === "article") { const a = c && find(c.articles, r.id); return (a ? a.title : "Article") + " · " + base; }
+    if (r.name === "framework") { const f = c && find(c.frameworks, r.id); return (f ? f.label : "Framework") + " · " + base; }
+    if (r.name === "note") { const n = c && find(c.notes, r.id); return (n ? n.title : "Leadership Note") + " · " + base; }
+    return "Nicholas You — Privacy, AI Governance & Records Management";
+  }
+
+  updateTitle(sendGA) {
+    try {
+      document.title = this.sectionTitle();
+      if (sendGA && window.gtag) {
+        gtag("event", "page_view", {
+          page_title: document.title,
+          page_location: location.href,
+          page_path: (location.pathname || "/") + (location.hash || "")
+        });
+      }
+    } catch (e) {}
+  }
+
+  /* Pulls all editable content from content/*.json — the files Decap CMS writes.
+     To change copy: edit those JSON files directly, or use the /admin panel. */
+  async loadContent() {
+    try {
+      const j = (f) => fetch("content/" + f + ".json?v=" + Date.now()).then((r) => {
+        if (!r.ok) throw new Error(f + " " + r.status);
+        return r.json();
+      });
+      const pick = (d) => Array.isArray(d) ? d : ((d && d.items) || []);
+      const [articles, maxims, notes, frameworks] = await Promise.all([
+        j("articles"), j("maxims"), j("notes"), j("frameworks")
+      ]);
+      this.setState({ content: {
+        articles: pick(articles), maxims: pick(maxims),
+        notes: pick(notes), frameworks: pick(frameworks)
+      } }, () => this.updateTitle(false));
+    } catch (e) {
+      console.error("Content failed to load:", e);
+      this.setState({ loadError: true });
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("hashchange", this._onHash);
+  }
+
+  /* Activate a clickable card with Enter or Space (keyboard accessibility). */
+  kbd(e, fn) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); } }
+
+  go(name, id) {
+    let hash;
+    if (name === "home") hash = "#/";
+    else if (name === "article") hash = "#/article/" + id;
+    else if (name === "framework") hash = "#/framework/" + id;
+    else if (name === "note") hash = "#/note/" + id;
+    else hash = "#/" + name;
+    if (location.hash === hash || (hash === "#/" && !location.hash)) {
+      window.scrollTo(0, 0);
+      this.setState({ route: this.parse() });
+    }
+    location.hash = hash;
+  }
+
+  slug(s) {
+    return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+
+  goTopic(topic) {
+    const h = "#/writing/" + this.slug(topic);
+    if (location.hash === h) { window.scrollTo(0, 0); this.setState({ route: this.parse() }); }
+    location.hash = h;
+  }
+
+  renderVals() {
+    const r = this.state.route;
+    const c = this.state.content || { articles: [], maxims: [], notes: [], frameworks: [] };
+    const toParas = (b) => Array.isArray(b) ? b : String(b || "").split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
+    const articles = c.articles.map((a, i) => ({
+      ...a,
+      num: String(i + 1).padStart(2, "0"),
+      open: () => this.go("article", a.id),
+      key: (e) => this.kbd(e, () => this.go("article", a.id))
+    }));
+    // Most-recent featured posts (ARTICLES is ordered newest-first). Tag any
+    // article with featured:true to surface it on the homepage — up to 6 show.
+    const featured = articles.filter((a) => a.featured).slice(0, 6);
+    const current = r.name === "article" ? articles.find((a) => a.id === r.id) : null;
+    const notFound = r.name === "article" && !current;
+    const routeTopic = r.name === "writing" ? r.topic : null;
+    const writingArticles = routeTopic ? articles.filter((a) => this.slug(a.category) === routeTopic) : articles;
+    const TOPICS = ["Data Privacy", "AI Governance", "Records Management"];
+    const mkChip = (label, active, on) => ({ label, active, on, color: active ? "#fff" : "#999", border: active ? "#fff" : "#3a3a3a" });
+    const topicChips = [mkChip("All", !routeTopic, () => this.go("writing"))].concat(
+      TOPICS.map((t) => mkChip(t, routeTopic === this.slug(t), () => this.goTopic(t)))
+    );
+
+    // Clickable index entries for the Maxims page
+    const frameworks = c.frameworks.map((f, i) => ({
+      label: f.label, summary: f.summary,
+      num: String(i + 1).padStart(2, "0"),
+      open: () => this.go("framework", f.id),
+      key: (e) => this.kbd(e, () => this.go("framework", f.id))
+    }));
+    const notes = c.notes.map((n) => ({
+      h: n.title, t: n.summary, open: () => this.go("note", n.id),
+      key: (e) => this.kbd(e, () => this.go("note", n.id))
+    }));
+
+    // Current detail piece (framework or leadership note)
+    let piece = null;
+    if (r.name === "framework") {
+      const f = c.frameworks.find((x) => x.id === r.id);
+      if (f) {
+        const rows = (f.rows || []).map((it, i) => ({
+          n: it.n || String(i + 1).padStart(2, "0"),
+          h: it.h || it.text || "",
+          t: it.t || ""
+        }));
+        piece = {
+          kindLabel: "Framework", label: f.label, summary: f.summary, body: toParas(f.body),
+          rows, stats: f.stats || [],
+          showRows: f.layout === "rows", showStats: f.layout === "stats"
+        };
+      }
+    } else if (r.name === "note") {
+      const n = c.notes.find((x) => x.id === r.id);
+      if (n) piece = {
+        kindLabel: "Leadership Note", label: n.title, summary: n.summary, body: toParas(n.body),
+        rows: [], stats: [], showRows: false, showStats: false
+      };
+    }
+    const isPiece = !!piece;
+
+    return {
+      isHome: r.name === "home",
+      isWriting: r.name === "writing" || notFound,
+      isArticle: r.name === "article" && !!current,
+      isAbout: r.name === "about",
+      isQuotes: r.name === "quotes",
+      isPiece,
+      piece,
+      frameworks,
+      notes,
+      articles,
+      writingArticles,
+      topicChips,
+      featured,
+      current,
+      credGroups: this.CRED_GROUPS,
+      quotes: c.maxims.map((q, i) => ({ ...q, num: String(i + 1).padStart(2, "0") })),
+      loadError: this.state.loadError,
+      year: new Date().getFullYear(),
+      goHome: () => this.go("home"),
+      goWriting: () => this.go("writing"),
+      goAbout: () => this.go("about"),
+      goQuotes: () => this.go("quotes"),
+      goTopicPrivacy: () => this.goTopic("Data Privacy"),
+      goTopicAI: () => this.goTopic("AI Governance"),
+      goTopicRecords: () => this.goTopic("Records Management")
+    };
+  }
+}
+</script>
+</body>
+</html>
