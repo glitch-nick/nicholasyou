@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Form registration</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<!-- This page exists only so Netlify's build-time form parser registers the
+     "contact" form. The live form on the site (rendered by JavaScript) submits
+     to it via fetch. Do not link to this page; do not delete it. -->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <input type="text" name="organization">
+  <textarea name="message"></textarea>
+  <input type="text" name="bot-field">
+</form>
+</body>
+</html>
