@@ -1,0 +1,16 @@
+# Netlify configuration for nicholasyou.com
+# This is a static site — no build step. Netlify just serves the files as-is.
+
+[build]
+  # No build command; publish the repo root.
+  publish = "."
+  command = ""
+
+# Serve the homepage Design Component at the root URL ("/").
+# status = 200 is a *rewrite*: the visitor stays at nicholasyou.com/ while
+# Netlify serves the homepage file. Existing files (support.js, content/*.json,
+# /admin/) are still served normally — this rule only fires for the bare root.
+[[redirects]]
+  from = "/"
+  to = "/Nicholas%20You.dc.html"
+  status = 200
