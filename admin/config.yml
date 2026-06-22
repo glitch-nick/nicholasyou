@@ -15,8 +15,9 @@
 # ============================================================================
 
 backend:
-  name: git-gateway
-  branch: main          # change if your default branch isn't "main"
+  name: github
+  repo: glitch-nick/nicholasyou
+  branch: main         # change if your default branch isn't "main"
 
 # Where image/file uploads are stored and how the site references them.
 media_folder: "assets/uploads"
